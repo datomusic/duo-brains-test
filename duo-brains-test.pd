@@ -200,9 +200,11 @@
 #X obj 1301 797 oscope~ 130 130 256 3 128 -1 1 0 0 0 0 90 90 90 228 228 228 200 200 200 0 empty;
 #X obj 1489 796 oscope~ 130 130 256 3 128 -1 1 0 0 0 0 90 90 90 228 228 228 200 200 200 0 empty;
 #X obj 1301 762 adc~ 3;
-#X obj 1489 761 adc~ 3;
 #X msg 181 112 240 125 100 12 247, f 19;
 #X obj 1029 506 pdcontrol;
+#X obj 1489 761 adc~ 4;
+#X obj 824 660 loadbang;
+#X msg 824 701 0.04, f 5;
 #X connect 2 0 7 0;
 #X connect 2 0 8 1;
 #X connect 2 0 38 0;
@@ -285,7 +287,7 @@
 #X connect 109 0 107 0;
 #X connect 109 0 108 0;
 #X connect 112 0 41 0;
-#X connect 114 0 133 0;
+#X connect 114 0 132 0;
 #X connect 115 0 116 0;
 #X connect 116 0 9 0;
 #X connect 118 0 119 0;
@@ -297,5 +299,7 @@
 #X connect 126 0 125 0;
 #X connect 128 0 127 0;
 #X connect 131 0 129 0;
-#X connect 132 0 130 0;
-#X connect 133 0 6 0;
+#X connect 132 0 6 0;
+#X connect 134 0 130 0;
+#X connect 135 0 136 0;
+#X connect 136 0 31 0;
